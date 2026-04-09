@@ -1,0 +1,34 @@
+//
+// Created by aynal on 4/9/26.
+//
+
+#include "_3.h"
+#include <iostream>
+using namespace std;
+
+class samp {
+    int a;
+
+public:
+    samp(int n) {
+        a = n;
+    }
+
+    int get_a() {
+        return a;
+    }
+};
+
+int main() {
+    samp ob[4][2] = {1, 2, 3, 4, 5, 6, 7, 8};
+
+    int i;
+    for (i = 0; i < 4; i++) {
+        cout << ob[i][0].get_a() << endl;
+        cout << ob[i][1].get_a() << endl;
+    }
+
+    cout << endl;
+
+    return 0;
+}
